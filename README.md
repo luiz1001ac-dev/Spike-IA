@@ -369,5 +369,46 @@ app.post("/create-video", async (req, res) => {
   }
 });
 
-exports.api = functions.https.onRequest(app);
+exports.api = functions.https.onRequest(app);name: Spike IA CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+    - name: Configurar Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: Instalar dependências
+      run: npm install
+    - name: Rodar build
+      run: npm run build# 👾 Spike IA
+
+Bem-vindo ao perfil oficial da **Spike IA** — a inteligência artificial que cria automaticamente vídeos educativos, com roteiro, voz, legenda e thumbnail.
+
+## 🚀 Recursos
+- Geração de roteiros automáticos
+- Voz sintética natural
+- Edição de vídeo com legendas
+- Criação de thumbnails
+- Upload automático para redes sociais
+- Publicação de APK Android na Play Store
+
+## 📂 Projetos Atuais
+- **Spike IA Core** → Backend + IA + Automação
+- **Spike IA Web** → Painel de controle online
+- **Spike IA Mobile** → Aplicativo Android
+
+## 📫 Contato
+- E-mail: contato@spikeia.com
+- Site: [www.spikeia.com](https://www.spikeia.com)
+
+---
+✨ *Transformando ideias em vídeos, automaticamente.*
 
