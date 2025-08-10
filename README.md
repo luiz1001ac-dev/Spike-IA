@@ -443,3 +443,24 @@ spike-ia/
     └── workflows/
         ├── ci.yml            # CI/CD para rodar testes e deploy
         ├── video_cron.yml    # Automação de vídeos programada
+spike-ia/
+│
+├── backend/
+│   ├── app.py                # API principal FastAPI
+│   ├── video_generator.py    # Geração de vídeo com MoviePy
+│   ├── thumbnail_generator.py # Geração de thumbnail com DALL·E
+│   ├── config.py             # Configurações (chaves de API, etc.)
+│   ├── requirements.txt      # Dependências backend
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx           # Painel de controle
+│   │   ├── components/
+│   │   │   ├── StatusCard.jsx
+│   │   │   └── GenerateButton.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── docker-compose.yml
+├── Dockerfile
+└── README.md
