@@ -411,4 +411,35 @@ Bem-vindo ao perfil oficial da **Spike IA** — a inteligência artificial que c
 
 ---
 ✨ *Transformando ideias em vídeos, automaticamente.*
-
+spike-ia/
+│
+├── backend/
+│   ├── app.py                # API principal com Flask/FastAPI
+│   ├── video_generator.py    # Geração de vídeo automática (roteiro → voz → vídeo)
+│   ├── thumbnail_generator.py # Thumbnails com DALL·E
+│   ├── post_to_social.py     # Postagem automática nas redes
+│   ├── requirements.txt      # Dependências backend
+│   └── config.py             # Configurações e chaves de API
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx           # Painel web (React)
+│   │   ├── components/
+│   │   │   ├── StatusCard.jsx
+│   │   │   ├── GenerateButton.jsx
+│   │   │   └── ProgressBar.jsx
+│   ├── package.json          # Dependências frontend
+│   └── vite.config.js
+│
+├── automation/
+│   ├── generate_video.py     # Script principal para execução em lote
+│   ├── deploy_playstore.yml  # Workflow para gerar APK e enviar para Play Store
+│   └── deploy_web.yml        # Workflow para deploy automático no Vercel/Firebase
+│
+├── docker-compose.yml        # Configuração Docker
+├── Dockerfile                # Imagem backend
+├── README.md                 # Documentação do projeto
+└── .github/
+    └── workflows/
+        ├── ci.yml            # CI/CD para rodar testes e deploy
+        ├── video_cron.yml    # Automação de vídeos programada
